@@ -10,7 +10,7 @@ public class Hello {
 
 //salamm
 
-    @GetMapping("/nadiaoutizi")
+    @GetMapping("/nadia_outizi")
     public String working(){
         return "nadia from marrakech";
     }

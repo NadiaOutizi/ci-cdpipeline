@@ -49,10 +49,10 @@ jobs:
           username: root
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd /home/tp1/nadiaOutizi
+            cd /home/tp1/nadiaOutizi#
             docker pull asmaael/hellodeploy:latest
             if [ $(docker ps -a -q -f name=container-nadia) ]; then
               docker stop container-nadia
               docker rm container-nadia
             fi
-            docker run -d --name container-nadia -p 5001:5001 -v /home/tp1/nadiaOutizi:/app asmaael/hellodeploy:latest
+            docker run -d --name container-nadia -p 5001:5001 -v /home/tp1/nadiaOutizi#:/app asmaael/hellodeploy:latest
