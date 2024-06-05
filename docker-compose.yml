@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-
-  cicd:
-    build: C:\IdeaProjects\helloNadia\src\main\Dockerfile
-    container_name: cicdPipeline
-    ports:
-      - "9999:8080"
